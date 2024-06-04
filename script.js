@@ -231,3 +231,11 @@ function slice() {
     console.log(result); // Output: [3, 4]
 }
 slice()
+
+//some ()
+function some() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.some((element) => element > 3);
+    console.log(result); // Output: true
+}
+some()
