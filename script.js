@@ -223,3 +223,11 @@ function shift() {
     console.log(array); // Output: [2, 3, 4, 5]
 }
 shift()
+
+//slice ()
+function slice() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.slice(2, 4);
+    console.log(result); // Output: [3, 4]
+}
+slice()
