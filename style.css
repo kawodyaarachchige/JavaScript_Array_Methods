@@ -11,10 +11,19 @@ h1{
 
 p{
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 400;
 
 }
 ul li{
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 450;
+}
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #30e36e;
+}
+pre{
+    font-size: 23px;
+    color: dodgerblue;
 }

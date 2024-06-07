@@ -45,7 +45,43 @@
     <li>values</li>
     <li>toString</li>
     <li>toLocaleString</li>
-
 </ul>
+<hr>
+<h2> 01 concat()</h2>
+<p>Joins two or more arrays and returns a new array.</p>
+<pre>const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const result = array1.concat(array2);
+
+console.log(result); // Output: [1, 2, 3, 4, 5, 6]</pre>
+
+<h2>02 copyWithin()</h2>
+<p>Copies part of an array to another location in the same array and returns it.</p>
+<pre>const array = [1, 2, 3, 4, 5];
+array.copyWithin(0, 3);
+
+console.log(array); // Output: [4, 5, 3, 4, 5]</pre>
+<p>array.copyWithin(target, start[, end])<br>
+    target: The index at which to copy the sequence to.<br>
+    start: The index at which to start copying elements from.<br>
+    end (optional): The index at which to end copying elements from (not included).
+</p>
+
+<h2>03 entries ()</h2>
+<p>Returns a new array iterator object that contains the key/value pairs for each index in the array.</p>
+<pre>const array = ['a', 'b', 'c'];  //Step 1: Create an array
+const iterator = array.entries();   //Step 2: Get the iterator from array entries
+
+// Step 3: Use for...of loop to iterate over the iterator
+
+for (let [index, element] of iterator) {
+  console.log(index, element);
+}
+// Output:
+// 0 'a'
+// 1 'b'
+// 2 'c'
+</pre>
+<h2></h2>
 </body>
 </html>
