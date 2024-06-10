@@ -214,3 +214,12 @@ function reverse() {
     console.log(result); // Output: [5, 4, 3, 2, 1]
 }
 reverse()
+
+// shift ()
+function shift() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.shift();
+    console.log(result); // Output: 1
+    console.log(array); // Output: [2, 3, 4, 5]
+}
+shift()
