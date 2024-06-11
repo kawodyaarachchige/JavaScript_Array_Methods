@@ -36,3 +36,12 @@ function every() {
     console.log(result); // Output: true
 }
 every()
+
+// fill ()
+
+function fill() {
+    let array = [1, 2, 3, 4, 5];
+    array.fill(0, 2, 4);
+    console.log(array); // Output: [1, 2, 0, 0, 5]
+}
+fill()
