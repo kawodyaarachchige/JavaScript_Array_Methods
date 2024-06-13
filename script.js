@@ -45,3 +45,12 @@ function fill() {
     console.log(array); // Output: [1, 2, 0, 0, 5]
 }
 fill()
+
+// filter ()
+
+function filter() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.filter((element) => element > 2);
+    console.log(result); // Output: [3, 4, 5]
+}
+filter()
