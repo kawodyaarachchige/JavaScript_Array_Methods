@@ -54,3 +54,12 @@ function filter() {
     console.log(result); // Output: [3, 4, 5]
 }
 filter()
+
+// find ()
+
+function find() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.find((element) => element > 3);
+    console.log(result); // Output: 4
+}
+find()
