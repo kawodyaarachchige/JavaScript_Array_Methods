@@ -96,19 +96,26 @@ array.fill(0, 2, 4); // Fill with 0 from index 2 to index 4 (exclusive)
 
 console.log(array); // Output: [1, 2, 0, 0, 5]
 </pre>
-<h2>06 filter()></h2>
+<h2>06 filter()</h2>
 <p>Creates a new array with all elements that pass the test implemented by the provided function.</p>
 <pre>const array = [1, 2, 3, 4, 5];
 const filtered = array.filter(num => num > 2);
 
 console.log(filtered); // Output: [3, 4, 5]
 </pre>
-<h2>07 find()></h2>
+<h2>07 find()</h2>
 <p>Returns the value of the first element in the array that satisfies the provided testing function.</p>
 <pre>const array = [1, 2, 3, 4, 5];
 const found = array.find(num => num > 3);
 
 console.log(found); // Output: 4
+</pre>
+<h2>08 findIndex()</h2>
+<p>Returns the index of the first element in the array that satisfies the provided testing function.</p>
+<pre>const array = [1, 2, 3, 4, 5];
+const foundIndex = array.findIndex(num => num > 3);
+
+console.log(foundIndex); // Output: 3
 </pre>
 </body>
 </html>

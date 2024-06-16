@@ -63,3 +63,14 @@ function find() {
     console.log(result); // Output: 4
 }
 find()
+
+// findIndex ()
+
+function findIndex() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.findIndex((element) => element > 3);
+    console.log(result); // Output: 3
+}
+findIndex()
+
+// flat ()
