@@ -74,3 +74,11 @@ function findIndex() {
 findIndex()
 
 // flat ()
+
+function flat() {
+    let array = [1, 2, [3, 4, [5, 6]]];
+    let result = array.flat(2);
+    console.log(result); // Output: [1, 2, 3, 4, 5, 6]
+}
+flat()
+//

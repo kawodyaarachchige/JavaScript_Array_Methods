@@ -117,5 +117,13 @@ const foundIndex = array.findIndex(num => num > 3);
 
 console.log(foundIndex); // Output: 3
 </pre>
+<h2>09 flat ()</h2>
+<p>Creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.</p>
+<pre>const array = [1, 2, [3, 4, [5, 6]]];
+const flatArray = array.flat(2);
+
+console.log(flatArray); // Output: [1, 2, 3, 4, 5, 6]
+</pre>
+
 </body>
 </html>
