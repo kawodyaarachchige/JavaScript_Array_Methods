@@ -124,6 +124,13 @@ const flatArray = array.flat(2);
 
 console.log(flatArray); // Output: [1, 2, 3, 4, 5, 6]
 </pre>
+<h2>10 flatMap()</h2>
+<p>First maps each element using a mapping function, then flattens the result into a new array.</p>
+<pre>const array = [1, 2, 3, 4];
+const flatMapped = array.flatMap(num => [num * 2]);
+
+console.log(flatMapped); // Output: [2, 4, 6, 8]
+</pre>
 
 </body>
 </html>

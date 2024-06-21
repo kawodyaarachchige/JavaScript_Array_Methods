@@ -81,4 +81,11 @@ function flat() {
     console.log(result); // Output: [1, 2, 3, 4, 5, 6]
 }
 flat()
-//
+
+// flatMap ()
+function flatMap() {
+    let array = [1, 2, 3, 4];
+    let result = array.flatMap((element) => [element * 2]);
+    console.log(result); // Output: [2, 4, 6, 8]
+}
+flatMap()
