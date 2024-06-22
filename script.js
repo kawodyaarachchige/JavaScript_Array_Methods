@@ -89,3 +89,14 @@ function flatMap() {
     console.log(result); // Output: [2, 4, 6, 8]
 }
 flatMap()
+
+// forEach ()
+
+function forEach() {
+    let array = [1, 2, 3];
+    array.forEach((element) => console.log(element));
+    // Output: 1
+    // 2
+    // 3
+}
+forEach()
