@@ -100,3 +100,11 @@ function forEach() {
     // 3
 }
 forEach()
+
+// Array.from ()
+function from() {
+    let array = Array.from('hello');
+    console.log(array); // Output: ['h', 'e', 'l', 'l', 'o']
+}
+from()
+
