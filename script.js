@@ -123,3 +123,11 @@ function indexOf() {
     console.log(result); // Output: 2
 }
 indexOf()
+
+// isArray ()
+function isArray() {
+    let array = [1, 2, 3];
+    let result = Array.isArray(array);
+    console.log(result); // Output: true
+}
+isArray()
