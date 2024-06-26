@@ -108,3 +108,18 @@ function from() {
 }
 from()
 
+// includes ()
+function includes() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.includes(3);
+    console.log(result); // Output: true
+}
+includes()
+
+// indexOf ()
+function indexOf() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.indexOf(3);
+    console.log(result); // Output: 2
+}
+indexOf()

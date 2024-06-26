@@ -117,7 +117,7 @@ const foundIndex = array.findIndex(num => num > 3);
 
 console.log(foundIndex); // Output: 3
 </pre>
-<h2>09 flat ()</h2>
+<h2>09 flat()</h2>
 <p>Creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.</p>
 <pre>const array = [1, 2, [3, 4, [5, 6]]];
 const flatArray = array.flat(2);
@@ -141,10 +141,25 @@ array.forEach(num => console.log(num));
 // 2
 // 3
 </pre>
-<h2>12 Array.from ()</h2>
+<h2>12 Array.from()</h2>
 <p>Converts an array-like object to an array.</p>
 <pre>const array = Array.from('hello');
 console.log(array); // Output: ['h', 'e', 'l', 'l', 'o']
 </pre>
+<h2>13 includes()</h2>
+<p>Determines whether an array includes a certain value among its entries.</p>
+<pre>const array = [1, 2, 3];
+const hasTwo = array.includes(2);
+
+console.log(hasTwo); // Output: true
+</pre>
+<h2>14 indexOf()</h2>
+<p>Returns the first index at which a given element can be found in the array, or -1 if it is not present.</p>
+<pre>const array = [1, 2, 3, 4, 5];
+const index = array.indexOf(3);
+
+console.log(index); // Output: 2
+</pre>
 </body>
+
 </html>
