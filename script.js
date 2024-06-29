@@ -139,3 +139,13 @@ function join() {
     console.log(result); // Output: 1-2-3-4-5
 }
 join()
+
+// keys ()
+function keys() {
+    let array = ['a', 'b', 'c'];
+    let result = array.keys();
+    for (let key of result) {
+        console.log(key); // Output: 0, 1, 2
+    }
+}
+keys()
