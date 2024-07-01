@@ -149,3 +149,11 @@ function keys() {
     }
 }
 keys()
+
+// lastIndexOf ()
+function lastIndexOf() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.lastIndexOf(3);
+    console.log(result); // Output: 2
+}
+lastIndexOf()
