@@ -175,7 +175,7 @@ const joined = array.join('-');
 
 console.log(joined); // Output: 'a-b-c'
 </pre>
-<h2>keys()</h2>
+<h2>17keys()</h2>
 <p>Returns a new Array Iterator object that contains the keys for each index in the array.</p>
 <pre>const array = ['a', 'b', 'c'];
 const keys = array.keys();
@@ -184,12 +184,19 @@ for (let key of keys) {
   console.log(key); // Output: 0, 1, 2
 }
 </pre>
-<h2>17 lastIndexOf()</h2>
+<h2>18 lastIndexOf()</h2>
 <p>Returns the last index at which a given element can be found in the array, or -1 if it is not present.</p>
 <pre>const array = [1, 2, 3, 4, 5];
 const index = array.lastIndexOf(3);
 
 console.log(index); // Output: 2
+</pre>
+<h2>19 map() </h2>
+<p>Creates a new array with the results of calling a provided function on every element in the calling array.</p>
+<pre>const array = [1, 2, 3];
+const mapped = array.map(num => num * 2);
+
+console.log(mapped); // Output: [2, 4, 6]
 </pre>
 </body>
 
