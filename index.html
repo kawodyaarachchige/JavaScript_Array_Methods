@@ -198,6 +198,28 @@ const mapped = array.map(num => num * 2);
 
 console.log(mapped); // Output: [2, 4, 6]
 </pre>
+<h2>20 Array.of()</h2>
+<p>Creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments.</p>
+<pre>const array = Array.of(1, 2, 3);
+
+console.log(array); // Output: [1, 2, 3]
+</pre>
+<h2>21 pop()</h2>
+<p>Removes the last element from an array and returns that element. This method changes the length of the array.</p>
+<pre>const array = [1, 2, 3];
+const popped = array.pop();
+
+console.log(popped); // Output: 3
+console.log(array); // Output: [1, 2]
+</pre>
+<h2>22 push()</h2>
+<p>Adds one or more elements to the end of an array and returns the new length of the array.</p>
+<pre>const array = [1, 2, 3];
+const length = array.push(4, 5);
+
+console.log(length); // Output: 5
+console.log(array); // Output: [1, 2, 3, 4, 5]
+</pre>
 </body>
 
 </html>

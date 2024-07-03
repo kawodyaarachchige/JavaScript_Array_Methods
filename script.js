@@ -165,3 +165,21 @@ function map() {
     console.log(result); // Output: [2, 4, 6, 8, 10]
 }
 map()
+
+// pop ()
+function pop() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.pop();
+    console.log(result); // Output: 5
+    console.log(array); // Output: [1, 2, 3, 4]
+}
+pop()
+
+// push ()
+function push() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.push(6);
+    console.log(result); // Output: 6
+    console.log(array); // Output: [1, 2, 3, 4, 5, 6]
+}
+push()
