@@ -166,6 +166,13 @@ function map() {
 }
 map()
 
+//of
+function of() {
+    let array = Array.of(1, 2, 3);
+    console.log(array); // Output: [1, 2, 3]
+}
+of()
+
 // pop ()
 function pop() {
     let array = [1, 2, 3, 4, 5];
@@ -183,3 +190,11 @@ function push() {
     console.log(array); // Output: [1, 2, 3, 4, 5, 6]
 }
 push()
+
+// reduce ()
+function reduce() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.reduce((accumulator, currentValue) => accumulator + currentValue);
+    console.log(result); // Output: 15
+}
+reduce()
