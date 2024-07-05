@@ -228,11 +228,20 @@ const sum = array.reduce((acc, num) => acc + num, 0); // Reduce the array to a s
 console.log(sum); // Output: 10
 </pre>
 
+<h2>24 reduceRight()></h2>
+<p>Applies a function against an accumulator and each element in the array (from right to left) to reduce it to a single value.</p>
+<pre>const array = [1, 2, 3, 4];
+const sum = array.reduceRight((acc, num) => acc + num, 0);
 
+console.log(sum); // Output: 10
 
+</pre>
 
-
-
+<h2>25 reverse()></h2>
+<p>Reverses an array in place. The first array element becomes the last, and the last array element becomes the first.</p>
+<pre>const array = [1, 2, 3, 4];
+array.reverse();
+    console.log(array); // Output: [4, 3, 2, 1]</pre>
 
 </body>
 

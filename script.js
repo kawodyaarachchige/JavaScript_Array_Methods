@@ -198,3 +198,19 @@ function reduce() {
     console.log(result); // Output: 15
 }
 reduce()
+
+// reduceRight ()
+function reduceRight() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.reduceRight((accumulator, currentValue) => accumulator + currentValue);
+    console.log(result); // Output: 15
+}
+reduceRight()
+
+// reverse ()
+function reverse() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.reverse();
+    console.log(result); // Output: [5, 4, 3, 2, 1]
+}
+reverse()
