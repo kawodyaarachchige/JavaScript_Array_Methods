@@ -272,3 +272,20 @@ function toString() {
     console.log(result); // Output: "1,2,3,4,5"
 }
 toString()
+
+//unshift ()
+function unshift() {
+    let array = [2, 3];
+    let result = array.unshift(1);
+    console.log(result); // Output: 3
+    console.log(array); // Output: [1, 2, 3]
+}
+unshift()
+
+//values ()
+function values() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.values();
+    console.log(result); // Output: [1, 2, 3, 4, 5]
+}
+values()

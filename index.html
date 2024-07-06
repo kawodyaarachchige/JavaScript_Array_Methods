@@ -288,13 +288,34 @@ const localeString = array.toLocaleString();
 
 console.log(localeString); // Output: "1,a,7/7/2024, 10:11:00 AM"
 </pre>
-<h2>toString ()</h2>
+<h2>32 toString ()</h2>
 <p>Returns a string representing the specified array and its element.</p>
 <pre>const array = [1, 2, 'a', 'b'];
 const string = array.toString();
 
 console.log(string); // Output: "1,2,a,b"
 
+</pre>
+<h2>33 unshift()</h2>
+<p>Adds one or more elements to the beginning of an array and returns the new length of the array.</p>
+<pre>const array = [2, 3];
+const newLength = array.unshift(1);
+
+console.log(newLength); // Output: 3
+console.log(array); // Output: [1, 2, 3]
+</pre>
+<h2>34 values()</h2>
+<p>Returns a new Array Iterator object that contains the values for each index in the array.</p>
+<pre>const array = ['a', 'b', 'c'];
+const iterator = array.values();
+
+for (let value of iterator) {
+  console.log(value);
+}
+// Output:
+// 'a'
+// 'b'
+// 'c'
 </pre>
 </body>
 
