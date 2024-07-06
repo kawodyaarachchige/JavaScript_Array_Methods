@@ -220,7 +220,7 @@ const length = array.push(4, 5);
 console.log(length); // Output: 5
 console.log(array); // Output: [1, 2, 3, 4, 5]
 </pre>
-<h2>23 reduce()></h2>
+<h2>23 reduce()</h2>
 <p>Applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value</p>
 <pre>const array = [1, 2, 3, 4];
 const sum = array.reduce((acc, num) => acc + num, 0); // Reduce the array to a single value (sum)
@@ -228,7 +228,7 @@ const sum = array.reduce((acc, num) => acc + num, 0); // Reduce the array to a s
 console.log(sum); // Output: 10
 </pre>
 
-<h2>24 reduceRight()></h2>
+<h2>24 reduceRight()</h2>
 <p>Applies a function against an accumulator and each element in the array (from right to left) to reduce it to a single value.</p>
 <pre>const array = [1, 2, 3, 4];
 const sum = array.reduceRight((acc, num) => acc + num, 0);
@@ -237,13 +237,13 @@ console.log(sum); // Output: 10
 
 </pre>
 
-<h2>25 reverse()></h2>
+<h2>25 reverse()</h2>
 <p>Reverses an array in place. The first array element becomes the last, and the last array element becomes the first.</p>
 <pre>const array = [1, 2, 3, 4];
 array.reverse();
     console.log(array); // Output: [4, 3, 2, 1]</pre>
 
-<h2>26 shift()></h2>
+<h2>26 shift()</h2>
 <p>Removes the first element from an array and returns that removed element. This method changes the length of the array.</p>
 <pre>const array = [1, 2, 3];
 const shifted = array.shift();
@@ -251,7 +251,7 @@ const shifted = array.shift();
 console.log(shifted); // Output: 1
 console.log(array); // Output: [2, 3]
 </pre>
-<h2>27 slice()></h2>
+<h2>27 slice()</h2>
 <p>Extracts a section of an array and returns a new array.</p>
 <pre>const array = [1, 2, 3, 4, 5];
 const sliced = array.slice(2, 4);
@@ -259,27 +259,42 @@ const sliced = array.slice(2, 4);
 console.log(sliced); // Output: [3, 4]
 </pre>
 
-<h2>28 some()></h2>
+<h2>28 some()</h2>
 <p>Determines whether at least one element in the array passes the test implemented by the provided function.</p>
 <pre>const array = [1, 2, 3, 4, 5];
 const result = array.some(num => num % 2 === 0);
 
 console.log(result); // Output: true
 </pre>
-<h2>29 sort()></h2>
+<h2>29 sort()</h2>
 <p>Sorts the elements of an array in place and returns the sorted array.</p>
 <pre>const array = [3, 2, 1];
 array.sort();
 console.log(array); // Output: [1, 2, 3]
 </pre>
 
-<h2>30 splice()></h2>
+<h2>30 splice()</h2>
 <p>Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.</p>
 <pre>const array = [1, 2, 3, 4, 5];
 const spliced = array.splice(2, 2);
 
 console.log(spliced); // Output: [3, 4]
 console.log(array); // Output: [1, 2, 5]
+</pre>
+<h2>31 toLocaleString()</h2>
+<p>Returns a string representing the elements of the array. The elements are converted to strings using their toLocaleString methods.</p>
+<pre>const array = [1, 'a', new Date()];
+const localeString = array.toLocaleString();
+
+console.log(localeString); // Output: "1,a,7/7/2024, 10:11:00 AM"
+</pre>
+<h2>toString ()</h2>
+<p>Returns a string representing the specified array and its element.</p>
+<pre>const array = [1, 2, 'a', 'b'];
+const string = array.toString();
+
+console.log(string); // Output: "1,2,a,b"
+
 </pre>
 </body>
 

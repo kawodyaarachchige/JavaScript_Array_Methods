@@ -256,3 +256,19 @@ function splice() {
     console.log(array); // Output: [1, 2]
 }
 splice()
+
+//toLocaleString ()
+function toLocaleString() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.toLocaleString();
+    console.log(result); // Output: "1,2,3,4,5"
+}
+toLocaleString()
+
+//toString ()
+function toString() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.toString();
+    console.log(result); // Output: "1,2,3,4,5"
+}
+toString()
