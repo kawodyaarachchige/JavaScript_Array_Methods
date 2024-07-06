@@ -1,16 +1,15 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-right: 7px;
+
 }
 
 body {
     line-height: 1.6;
     background-color: rgb(3, 3, 3);
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
 }
 .header{
     background-color: dodgerblue;
@@ -51,6 +50,11 @@ a {
 .right-column {
     order: 3;
 }
+#codeSection{
+   width:100vw;
+    height: auto;
+
+}
 .image{
     display: block;
     margin-left: auto;
@@ -61,35 +65,73 @@ a {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     color: dodgerblue;
 }
 
 p {
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 400;
 }
 
 ul li {
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 450;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 700;
+    color: #30e36e;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 500;
     color: #30e36e;
 }
 
 pre {
-    font-size: 23px;
-    color: dodgerblue;
+    white-space: pre-wrap; /* Allows lines to wrap */
+    word-wrap: break-word; /* Break long words if necessary */
+    overflow-x: auto; /* Add horizontal scrolling if needed */
+    font-size: 1.2rem; /* Adjust base font size */
+    padding: 10px;
+
+    color: dodgerblue; /* Dark text for contrast */
+    border-radius: 4px;
+
+}
+.header {
+    background-color: dodgerblue;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-ol li {
-    font-size: 30px;
-    font-weight: 350;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: rgba(243, 236, 236, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: dodgerblue;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 footer {
@@ -125,11 +167,12 @@ footer {
     }
 
     pre {
-        font-size: 13px;
+        font-size: 0.8em; /* Smaller font size */
     }
 
-    ol li {
-        font-size: 20px;
+    th, td {
+        padding: 10px;
+        font-size: 14px;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -155,16 +198,19 @@ footer {
     }
 
     pre {
-        font-size: 18px;
+        font-size: 0.9em; /* Slightly smaller font size */
     }
 
     footer {
         font-size: 18px;
         padding: 8px;
     }
+    table {
+        width: 90%;
+    }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 650px) {
     .left-column, .right-column {
         width: 100%; /* Full width for smaller screens */
         order: 2; /* Ensure main content comes first in stacking order */
@@ -187,39 +233,52 @@ footer {
     }
 
     pre {
-        font-size: 13px;
+        pre {
+            font-size: 0.8em; /* Even smaller font size */
+        }
     }
 
     footer {
         font-size: 16px;
         padding: 8px;
     }
+    th, td {
+        padding: 9px;
+        font-size: 13px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
     h1 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     p {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     ul li, ol li {
-        font-size: 18px;
+        font-size: 13px;
     }
 
     h2 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     pre {
-        font-size: 12px;
+        font-size: 0.7em; /* Even smaller font size */
     }
 
     footer {
-        font-size: 14px;
+        font-size: 12px;
         padding: 5px;
+    }
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+    h3{
+        font-size: 15px;
     }
 }
 

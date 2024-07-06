@@ -57,6 +57,7 @@
             </ul>
         </div>
     </div>
+<section id ="codeSection">
 <h2> 01 concat()</h2>
 <p>Joins two or more arrays and returns a new array.</p>
 <pre>const array1 = [1, 2, 3];
@@ -337,70 +338,77 @@ for (let value of iterator) {
 // 'b'
 // 'c'
 </pre>
+</section>
+<br>
 <img class="image" src="images/js-arrays-aggregated.webp">
 <br>
 <hr>
-<h2>Let's break down some pairs or groups of methods that are related or have significant differences:</h2>
-<ol>
-    <li>copyWithin vs splice:
-        <ul>copyWithin: Copies elements within an array to another position in the same array.</ul>
-        <br>
-        <ul>splice: Adds or removes elements from an array, returning the removed elements.</ul>
-        <p>Difference: copyWithin modifies the array in place by copying elements, while splice can add or remove
-            elements and returns the removed elements.</p>
-    </li>
-    <li>find vs filter:
-        <ul>find: Returns the first element in the array that satisfies the provided testing function.</ul>
-        <br>
-        <ul>filter: Returns a new array with all elements that pass the test implemented by the provided function.</ul>
-        <p>Difference: find returns the first element that matches the condition, while filter returns all elements that
-            match the condition.</p>
-    </li>
-    <li>indexOf vs lastIndexOf:
-        <ul>indexOf: Returns the first index at which a given element can be found in the array.</ul>
-        <br>
-        <ul>lastIndexOf: Returns the last index at which a given element can be found in the array.</ul>
-        <p>Difference: indexOf finds the first occurrence of an element, while lastIndexOf finds the last
-            occurrence.</p>
-    </li>
-    <li>reduce vs reduceRight:
-        <ul>reduce: Executes a reducer function on each element of the array, resulting in a single output value.</ul>
-        <br>
-        <ul>reduceRight: Executes a reducer function on each element of the array (from right-to-left), resulting in a
-            single output value.
-        </ul>
-        <p>Difference: reduce processes elements from left to right, while reduceRight processes elements from right to
-            left.</p>
-    </li>
-    <li>entries, keys, values:
-        <ul>entries: Returns an iterator of key/value pairs for array elements.</ul>
-        <br>
-        <ul>keys: Returns an iterator of keys (indices) in the array.</ul>
-        <br>
-        <ul>values: Returns an iterator of values in the array.</ul>
-        <p>Difference: entries provides both indices and values, keys provides only indices, and values provides only
-            values.</p>
-    </li>
-    <li>concat vs push/unshift:
-        <ul>concat: Combines arrays and returns a new array without modifying the original arrays.</ul>
-        <br>
-        <ul>push: Adds one or more elements to the end of an array and returns the new length of the array</ul>
-        <br>
-        <ul>unshift: Adds one or more elements to the beginning of an array and returns the new length of the array</ul>
-        <p>Difference: concat creates a new array, while push and unshift modify the original array by adding
-            elements.</p>
-    </li>
-    <li>forEach vs map:
-        <ul>forEach: Executes a provided function once for each array element</ul>
-        <br>
-        <ul>map: Creates a new array populated with the results of calling a provided function on every element in the
-            calling array.
-        </ul>
-        <p>Difference: forEach is used for iterating and executing a function for each element without returning a new
-            array, while map is used for transforming each element and creating a new array with the transformed
-            values</p>
-    </li>
-</ol>
+<h3>Let's break down some pairs or groups of methods that are related or have significant differences:</h3>
+<table>
+    <tr>
+        <th>Methods</th>
+        <th>Description</th>
+        <th>Difference</th>
+    </tr>
+    <tr>
+        <td>copyWithin vs splice</td>
+        <td>
+            <strong>copyWithin:</strong> Copies elements within an array to another position in the same array.<br>
+            <strong>splice:</strong> Adds or removes elements from an array, returning the removed elements.
+        </td>
+        <td>copyWithin modifies the array in place by copying elements, while splice can add or remove elements and returns the removed elements.</td>
+    </tr>
+    <tr>
+        <td>find vs filter</td>
+        <td>
+            <strong>find:</strong> Returns the first element in the array that satisfies the provided testing function.<br>
+            <strong>filter:</strong> Returns a new array with all elements that pass the test implemented by the provided function.
+        </td>
+        <td>find returns the first element that matches the condition, while filter returns all elements that match the condition.</td>
+    </tr>
+    <tr>
+        <td>indexOf vs lastIndexOf</td>
+        <td>
+            <strong>indexOf:</strong> Returns the first index at which a given element can be found in the array.<br>
+            <strong>lastIndexOf:</strong> Returns the last index at which a given element can be found in the array.
+        </td>
+        <td>indexOf finds the first occurrence of an element, while lastIndexOf finds the last occurrence.</td>
+    </tr>
+    <tr>
+        <td>reduce vs reduceRight</td>
+        <td>
+            <strong>reduce:</strong> Executes a reducer function on each element of the array, resulting in a single output value.<br>
+            <strong>reduceRight:</strong> Executes a reducer function on each element of the array (from right-to-left), resulting in a single output value.
+        </td>
+        <td>reduce processes elements from left to right, while reduceRight processes elements from right to left.</td>
+    </tr>
+    <tr>
+        <td>entries, keys, values</td>
+        <td>
+            <strong>entries:</strong> Returns an iterator of key/value pairs for array elements.<br>
+            <strong>keys:</strong> Returns an iterator of keys (indices) in the array.<br>
+            <strong>values:</strong> Returns an iterator of values in the array.
+        </td>
+        <td>entries provides both indices and values, keys provides only indices, and values provides only values.</td>
+    </tr>
+    <tr>
+        <td>concat vs push/unshift</td>
+        <td>
+            <strong>concat:</strong> Combines arrays and returns a new array without modifying the original arrays.<br>
+            <strong>push:</strong> Adds one or more elements to the end of an array and returns the new length of the array.<br>
+            <strong>unshift:</strong> Adds one or more elements to the beginning of an array and returns the new length of the array.
+        </td>
+        <td>concat creates a new array, while push and unshift modify the original array by adding elements.</td>
+    </tr>
+    <tr>
+        <td>forEach vs map</td>
+        <td>
+            <strong>forEach:</strong> Executes a provided function once for each array element.<br>
+            <strong>map:</strong> Creates a new array populated with the results of calling a provided function on every element in the calling array.
+        </td>
+        <td>forEach is used for iterating and executing a function for each element without returning a new array, while map is used for transforming each element and creating a new array with the transformed values.</td>
+    </tr>
+</table>
 <footer> Created by Kawodya Arachchige :) Happy Coding!</footer>
 
 </body>
