@@ -1,29 +1,134 @@
-body{
-    background-color: black;
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 7px;
+}
+
+body {
+    line-height: 1.6;
+    background-color: rgb(3, 3, 3);
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-h1{
+.header{
+    background-color: dodgerblue;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+}
+.container {
+    display: flex;
+    margin: 20px auto;
+    width: 70%;
+    background-color: rgba(243, 236, 236, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-column, .right-column {
+    width: 50%;
+}
+
+.main-content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.left-column {
+    order: 1;
+}
+
+.right-column {
+    order: 3;
+}
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: auto;
+
+}
+
+h1 {
     font-size: 50px;
     font-weight: 700;
     color: dodgerblue;
 }
 
-p{
+p {
     font-size: 25px;
     font-weight: 400;
-
 }
-ul li{
+
+ul li {
     font-size: 30px;
     font-weight: 450;
 }
-h2{
+
+h2 {
     font-size: 30px;
     font-weight: 700;
     color: #30e36e;
 }
-pre{
+
+pre {
     font-size: 23px;
     color: dodgerblue;
+}
+
+ol li {
+    font-size: 30px;
+    font-weight: 350;
+}
+
+footer {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    background: dodgerblue;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+    .left-column, .right-column {
+        width: 100%; /* Full width for smaller screens */
+        order: 2; /* Ensure main content comes first in stacking order */
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    ul li {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    pre {
+        font-size: 13px;
+    }
+
+    ol li {
+        font-size: 20px;
+    }
 }

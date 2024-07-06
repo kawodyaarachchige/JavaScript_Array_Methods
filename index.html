@@ -10,43 +10,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1><b>JavaScript Array Methods</b></h1>
-<p>Here is a comprehensive list of JavaScript array methods, along with brief descriptions and coding examples for each:</p>
-<ul>
-    <li>concat</li>
-    <li>copyWithin</li>
-    <li>entries</li>
-    <li>every</li>
-    <li>fill</li>
-    <li>filter</li>
-    <li>find</li>
-    <li>findIndex</li>
-    <li>flatMap</li>
-    <li>forEach</li>
-    <li>from</li>
-    <li>indexOf</li>
-    <li>isArray</li>
-    <li>join</li>
-    <li>lastIndexOf</li>
-    <li>keys</li>
-    <li>map</li>
-    <li>of</li>
-    <li>pop</li>
-    <li>push</li>
-    <li>reduce</li>
-    <li>reduceRight</li>
-    <li>reverse</li>
-    <li>shift</li>
-    <li>slice</li>
-    <li>some</li>
-    <li>sort</li>
-    <li>splice</li>
-    <li>unshift</li>
-    <li>values</li>
-    <li>toString</li>
-    <li>toLocaleString</li>
-</ul>
-<hr>
+<div class="header"> <a href="https://www.linkedin.com/in/kawodya-arachchige-781519282">View My Linkedin</a></div>
+<main>
+    <h1><b>JavaScript Array Methods</b></h1>
+    <p>Here is a comprehensive list of JavaScript array methods, along with brief descriptions and coding examples for
+        each:</p>
+</main>
+    <div class="container">
+        <div class="left-column">
+            <ul>
+                <li>concat</li>
+                <li>copyWithin</li>
+                <li>entries</li>
+                <li>every</li>
+                <li>fill</li>
+                <li>filter</li>
+                <li>find</li>
+                <li>findIndex</li>
+                <li>flatMap</li>
+                <li>forEach</li>
+                <li>from</li>
+                <li>indexOf</li>
+                <li>isArray</li>
+                <li>join</li>
+                <li>lastIndexOf</li>
+            </ul>
+        </div>
+
+        <div class="right-column">
+            <ul>
+                <li>keys</li>
+                <li>map</li>
+                <li>of</li>
+                <li>pop</li>
+                <li>push</li>
+                <li>reduce</li>
+                <li>reduceRight</li>
+                <li>reverse</li>
+                <li>shift</li>
+                <li>slice</li>
+                <li>some</li>
+                <li>sort</li>
+                <li>splice</li>
+                <li>unshift</li>
+                <li>values</li>
+            </ul>
+        </div>
+    </div>
 <h2> 01 concat()</h2>
 <p>Joins two or more arrays and returns a new array.</p>
 <pre>const array1 = [1, 2, 3];
@@ -70,7 +80,8 @@ console.log(array); // Output: [4, 5, 3, 4, 5]</pre>
 <h2>03 entries ()</h2>
 <p>Returns a new array iterator object that contains the key/value pairs for each index in the array.</p>
 <pre>const array = ['a', 'b', 'c'];  //Step 1: Create an array
-const iterator = array.entries();   //Step 2: Get the iterator from array entries
+const iterator = array.entries();
+    //Step 2: Get the iterator from array entries
 
 // Step 3: Use for...of loop to iterate over the iterator
 
@@ -221,15 +232,18 @@ console.log(length); // Output: 5
 console.log(array); // Output: [1, 2, 3, 4, 5]
 </pre>
 <h2>23 reduce()</h2>
-<p>Applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value</p>
+<p>Applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single
+    value</p>
 <pre>const array = [1, 2, 3, 4];
-const sum = array.reduce((acc, num) => acc + num, 0); // Reduce the array to a single value (sum)
+const sum = array.reduce((acc, num) => acc + num, 0);
+    // Reduce the array to a single value (sum)
 
 console.log(sum); // Output: 10
 </pre>
 
 <h2>24 reduceRight()</h2>
-<p>Applies a function against an accumulator and each element in the array (from right to left) to reduce it to a single value.</p>
+<p>Applies a function against an accumulator and each element in the array (from right to left) to reduce it to a single
+    value.</p>
 <pre>const array = [1, 2, 3, 4];
 const sum = array.reduceRight((acc, num) => acc + num, 0);
 
@@ -238,13 +252,15 @@ console.log(sum); // Output: 10
 </pre>
 
 <h2>25 reverse()</h2>
-<p>Reverses an array in place. The first array element becomes the last, and the last array element becomes the first.</p>
+<p>Reverses an array in place. The first array element becomes the last, and the last array element becomes the
+    first.</p>
 <pre>const array = [1, 2, 3, 4];
 array.reverse();
     console.log(array); // Output: [4, 3, 2, 1]</pre>
 
 <h2>26 shift()</h2>
-<p>Removes the first element from an array and returns that removed element. This method changes the length of the array.</p>
+<p>Removes the first element from an array and returns that removed element. This method changes the length of the
+    array.</p>
 <pre>const array = [1, 2, 3];
 const shifted = array.shift();
 
@@ -274,7 +290,8 @@ console.log(array); // Output: [1, 2, 3]
 </pre>
 
 <h2>30 splice()</h2>
-<p>Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.</p>
+<p>Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted
+    elements.</p>
 <pre>const array = [1, 2, 3, 4, 5];
 const spliced = array.splice(2, 2);
 
@@ -282,11 +299,13 @@ console.log(spliced); // Output: [3, 4]
 console.log(array); // Output: [1, 2, 5]
 </pre>
 <h2>31 toLocaleString()</h2>
-<p>Returns a string representing the elements of the array. The elements are converted to strings using their toLocaleString methods.</p>
+<p>Returns a string representing the elements of the array. The elements are converted to strings using their
+    toLocaleString methods.</p>
 <pre>const array = [1, 'a', new Date()];
 const localeString = array.toLocaleString();
 
-console.log(localeString); // Output: "1,a,7/7/2024, 10:11:00 AM"
+console.log(localeString);
+    // Output: "1,a,7/7/2024, 10:11:00 AM"
 </pre>
 <h2>32 toString ()</h2>
 <p>Returns a string representing the specified array and its element.</p>
@@ -317,6 +336,72 @@ for (let value of iterator) {
 // 'b'
 // 'c'
 </pre>
+<img class="image" src="images/js-arrays-aggregated.webp">
+<br>
+<hr>
+<h2>Let's break down some pairs or groups of methods that are related or have significant differences:</h2>
+<ol>
+    <li>copyWithin vs splice:
+        <ul>copyWithin: Copies elements within an array to another position in the same array.</ul>
+        <br>
+        <ul>splice: Adds or removes elements from an array, returning the removed elements.</ul>
+        <p>Difference: copyWithin modifies the array in place by copying elements, while splice can add or remove
+            elements and returns the removed elements.</p>
+    </li>
+    <li>find vs filter:
+        <ul>find: Returns the first element in the array that satisfies the provided testing function.</ul>
+        <br>
+        <ul>filter: Returns a new array with all elements that pass the test implemented by the provided function.</ul>
+        <p>Difference: find returns the first element that matches the condition, while filter returns all elements that
+            match the condition.</p>
+    </li>
+    <li>indexOf vs lastIndexOf:
+        <ul>indexOf: Returns the first index at which a given element can be found in the array.</ul>
+        <br>
+        <ul>lastIndexOf: Returns the last index at which a given element can be found in the array.</ul>
+        <p>Difference: indexOf finds the first occurrence of an element, while lastIndexOf finds the last
+            occurrence.</p>
+    </li>
+    <li>reduce vs reduceRight:
+        <ul>reduce: Executes a reducer function on each element of the array, resulting in a single output value.</ul>
+        <br>
+        <ul>reduceRight: Executes a reducer function on each element of the array (from right-to-left), resulting in a
+            single output value.
+        </ul>
+        <p>Difference: reduce processes elements from left to right, while reduceRight processes elements from right to
+            left.</p>
+    </li>
+    <li>entries, keys, values:
+        <ul>entries: Returns an iterator of key/value pairs for array elements.</ul>
+        <br>
+        <ul>keys: Returns an iterator of keys (indices) in the array.</ul>
+        <br>
+        <ul>values: Returns an iterator of values in the array.</ul>
+        <p>Difference: entries provides both indices and values, keys provides only indices, and values provides only
+            values.</p>
+    </li>
+    <li>concat vs push/unshift:
+        <ul>concat: Combines arrays and returns a new array without modifying the original arrays.</ul>
+        <br>
+        <ul>push: Adds one or more elements to the end of an array and returns the new length of the array</ul>
+        <br>
+        <ul>unshift: Adds one or more elements to the beginning of an array and returns the new length of the array</ul>
+        <p>Difference: concat creates a new array, while push and unshift modify the original array by adding
+            elements.</p>
+    </li>
+    <li>forEach vs map:
+        <ul>forEach: Executes a provided function once for each array element</ul>
+        <br>
+        <ul>map: Creates a new array populated with the results of calling a provided function on every element in the
+            calling array.
+        </ul>
+        <p>Difference: forEach is used for iterating and executing a function for each element without returning a new
+            array, while map is used for transforming each element and creating a new array with the transformed
+            values</p>
+    </li>
+</ol>
+<footer> Created by Kawodya Arachchige :) Happy Coding!</footer>
+
 </body>
 
 </html>
