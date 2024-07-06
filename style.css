@@ -132,3 +132,94 @@ footer {
         font-size: 20px;
     }
 }
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    ul li, ol li {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    pre {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .left-column, .right-column {
+        width: 100%; /* Full width for smaller screens */
+        order: 2; /* Ensure main content comes first in stacking order */
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    ul li, ol li {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    pre {
+        font-size: 13px;
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    ul li, ol li {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    pre {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
