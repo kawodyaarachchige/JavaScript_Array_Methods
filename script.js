@@ -239,3 +239,20 @@ function some() {
     console.log(result); // Output: true
 }
 some()
+
+//sort ()
+function sort() {
+    let array = [5, 2, 4, 1, 3];
+    let result = array.sort();
+    console.log(result); // Output: [1, 2, 3, 4, 5]
+}
+sort()
+
+//splice ()
+function splice() {
+    let array = [1, 2, 3, 4, 5];
+    let result = array.splice(2, 3);
+    console.log(result); // Output: [3, 4, 5]
+    console.log(array); // Output: [1, 2]
+}
+splice()
