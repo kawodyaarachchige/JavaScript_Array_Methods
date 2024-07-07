@@ -42,7 +42,7 @@ Each array method in this repository is accompanied by a brief description and a
 
 ## Hosted Page
 
-You can view the detailed documentation and examples of each method on the hosted page: [JavaScript Array Methods](https://kawodyaarachchige.github.io/JavaScriptArrayMethods/)
+You can view the detailed documentation and examples of each method on the hosted page: [JavaScript Array Methods](https://kawodyaarachchige.github.io/JavaScript_Array_Methods/)
 
 ## License
 
